@@ -7,16 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Member {
-
-	public Member(String id, String password, String name) {
-		this.id = id;
-		this.password = password;
-		this.name = name;
-	}
-
 	private int no;
 
 	private String id;
@@ -41,4 +34,9 @@ public class Member {
 
 	private Date modifyDate;
 
+	public Member(String id, String password, String name) {
+		this.id = id;
+		this.password = password;
+		this.name = name;
+	}
 }

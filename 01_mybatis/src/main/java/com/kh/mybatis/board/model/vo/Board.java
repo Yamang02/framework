@@ -8,34 +8,34 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Board {
-
 	private int no;
-
+	
 	private int rowNum;
-
+	
 	private int writerNo;
-
+	
 	private String writerId;
-
+	
 	private String title;
-
+	
 	private String content;
-
+	
 	private String originalFileName;
-
+	
 	private String renamedFileName;
-
+	
 	private int readCount;
-
+	
 	private String status;
-
+	
+	private String type;
+	
 	private List<Reply> replies;
-
+	
 	private Date createDate;
-
+	
 	private Date modifyDate;
-
 }

@@ -1,0 +1,4 @@
+[INFO ] 2023-03-09 15:23:35.358 [main] mybatis.member.model.service.MemberService getMemberCount - getBoardCount() 메소드 호출 - 
+[DEBUG] 2023-03-09 15:23:35.359 [main] mybatis.member.model.service.MemberService getMemberCount - getBoardCount() 메소드 호출 debug - 2 - 
+[INFO ] 2023-03-09 15:29:03.505 [main] mybatis.member.model.service.MemberService getMemberCount - getMemberCount() 메소드 호출 - 
+[DEBUG] 2023-03-09 15:29:03.508 [main] mybatis.member.model.service.MemberService getMemberCount - getMemberCount() 메소드 호출 debug - 2 - 

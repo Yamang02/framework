@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<!-- Maven pom의 버전 -->
 	<modelVersion>4.0.0</modelVersion>
@@ -47,6 +46,14 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- logging 관련 라이브러리 -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j2-impl</artifactId>
+			<version>2.20.0</version>
+		</dependency>
+
+
 		<!-- 테스트 관련 라이브러리 -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -68,13 +75,11 @@
 			<version>3.24.2</version>
 			<scope>test</scope>
 		</dependency>
-
 	</dependencies>
 
 	<!-- 프로젝트 빌드에 대한 설정 -->
 	<build>
-		<pluginManagement><!-- lock down plugins versions to avoid using Maven
-				defaults (may be moved to parent pom) -->
+		<pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 			<plugins>
 				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>

@@ -26,7 +26,6 @@ public class SqlSessionTemplate {
 			factory = builder.build(is);
 //			factory = builder.build(is, "KH");
 			
-			
 			// 3. SqlSession 생성 (true : 오토 커밋, false : 수동 커밋)
 			session = factory.openSession(false);
 		} catch (IOException e) {
